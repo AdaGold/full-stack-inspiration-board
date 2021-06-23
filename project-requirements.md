@@ -48,6 +48,7 @@ Note: If your project changes the directory name `app` to something else, or ren
 Aim to complete all of these features. You and your team should feel *empowered* to:
 
 - Interpret the features however you'd like
+- Style the web app however you'd like, as long as it's usable
 - Prioritize which features come first
 
 We recommend prioritizing creating and reading Boards and Cards.
