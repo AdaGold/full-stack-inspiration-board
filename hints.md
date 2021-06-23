@@ -43,16 +43,19 @@ Feel free to inspect the example implementation using React Dev Tools for more i
 Components:
 
 1. `App`
-1. `BoardList`
 1. `Board`
 1. `NewBoardForm`
 1. `CardList`
 1. `NewCardForm`
 1. `Card`
 
+Note: Why isn't there a `BoardList`? There's not really a good reason, besides a weird decision. Not every design turns out perfectly!
+
 </details>
 
-## Hint #3: Props and State in "Board" Component
+## Hint #3: Props and State in "Board"-related Component
+
+Don't forget that these are here to inspire your solution. They are not requirements!
 
 <details>
 
@@ -60,7 +63,7 @@ Components:
 
 Feel free to inspect the example implementation using React Dev Tools for more inspiration.
 
-### `App`
+### In the container component that holds data about boards
 
 State:
 
@@ -68,28 +71,23 @@ State:
 - `selectedBoard`
 - `isBoardFormVisible`
 
+### `Board`
+
+Props:
+
+- `board`
+- `onBoardSelect`
+
 ### `NewBoardForm`
+
+Props:
+
+- `createNewBoard`
 
 State:
 
 - `title`
 - `owner`
-
-### `CardList`
-
-Props:
-
-- `board`
-
-State:
-
-- `cardsData`
-
-### `NewCardForm`
-
-State:
-
-- `message`
 
 </details>
 
@@ -110,6 +108,8 @@ State:
 </details>
 
 ## Hint #5: Responses from the API
+
+Don't forget that these are here to inspire your solution. They are not requirements!
 
 <details>
 

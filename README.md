@@ -29,7 +29,8 @@ Once upon a time, there existed an Ada Developers Academy office with an inspira
 
 It was a delightful board, where people could anonymously post short messages of encouragement to each other. It was filled with the kindest words and the nerdiest programming jokes.
 
-![](assets/board.jpeg)
+![A corkboard full of pinned sticky notes, where each sticky note has a short, inspirational message.](assets/board.jpeg)  
+_Fig. A corkboard full of pinned sticky notes, where each sticky note has a short, inspirational message._
 
 Our goal is to create a digital inspiration board.
 
@@ -47,9 +48,14 @@ We will use this project as a chance to see how the front-end layer and back-end
 
 (This app may take a long time to load, so you may need to refresh it periodically.)
 
-![]()
+![A web app titled "Inspiration Board," with three columns titled "Boards," "Selected Board," and "Create a New Board."](./assets/new_board_highlight.png)  
+_Fig. This example displays a list of boards, the name of a selected board (if there is one), and a form to create a new board._
 
-![]()
+![A web app with five sections titled "Boards," "Selected Board," "Create a New Board," "Cards for Pick-Me-Up Quotes," and "Create a New Card"](./assets/new_card_highlight.png)  
+_Fig. This example displays all cards that belong to a board, once a selected board has been chosen._
+
+![Two sections titled "Cards for Pick-Me-Up Quotes" and "Create a New Card." There is a section of cards, featuring messages.](./assets/card_list_highlight.png)  
+_Fig. This example has a section of cards. Each card has a message, the number of "likes," a button to add the like, and a button to delete the card._
 
 ## How to Complete and Submit
 
@@ -74,13 +80,13 @@ The group will also give a final presentation. Presentation requirements are lis
     - Begin this discussion by sharing ideas of what inspires you
     - Create a project name that will appear on the top of the web app
 1. Create a public Slack channel for the team. This is **required** in order to fulfill the required project development workflow.
-1. Schedule time to go through the directions in (the One-time Project Setup document)[./one-time-project-setup.md].
+1. Schedule time to go through the directions in [the one-time project setup document](./one-time-project-setup.md).
 
 ## One-Time Project Setup
 
 Follow these directions once at the beginning of your project:
 
-- (One-time project setup directions)[./one-time-project-setup.md]
+- [One-time project setup directions](./one-time-project-setup.md)
 
 ## Project Development Workflow Requirements
 
