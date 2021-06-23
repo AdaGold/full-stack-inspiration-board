@@ -49,7 +49,7 @@ Components:
 1. `NewCardForm`
 1. `Card`
 
-Note: Why isn't there a `BoardList`? There's not really a good reason, besides a weird decision. Not every design turns out perfectly!
+Note: Why isn't there a `BoardList` component? There's not really a good reason, besides a weird decision. Not every design turns out perfectly! Many designs evolve over time.
 
 </details>
 
@@ -107,15 +107,49 @@ State:
 
 </details>
 
-## Hint #5: Responses from the API
+## Hint #5: Requests to the API
 
 Don't forget that these are here to inspire your solution. They are not requirements!
 
 <details>
 
-<summary>The example implementation expects these responses from the API.</summary>
+<summary>In the example implementation, the front-end layer sends these request bodies to the back-end API.</summary>
 
-Every time some board data is sent, each board data is an object with these key-value pairs:
+<br/>
+
+Every time the front-end sends a request to the back-end, and the request needs to send data about a board, the HTTP request includes these key-value pairs:
+
+```json
+{
+    "title": ...,
+    "owner": ...
+}
+```
+
+Every time the front-end sends a request to the back-end, and the request needs to send data about a card, the HTTP request includes these key-value pairs:
+
+```json
+{
+    "message": ...,
+    "likes_count": 0,
+    "board_id": ...
+}
+```
+
+
+</details>
+
+## Hint #6: Responses from the API
+
+Don't forget that these are here to inspire your solution. They are not requirements!
+
+<details>
+
+<summary>In the example implementation, the back-end API sends back these responses to the front-end layer.</summary>
+
+<br/>
+
+Every time the API sends back data about a board, the HTTP response includes these key-value pairs:
 
 ```json
 {
@@ -125,7 +159,7 @@ Every time some board data is sent, each board data is an object with these key-
 }
 ```
 
-Lists of boards are in an array:
+When the API sends back a list of boards, the HTTP response looks like:
 
 ```json
 [
@@ -142,7 +176,7 @@ Lists of boards are in an array:
 ]
 ```
 
-Each card data is sent with these key-value pairs:
+When the API sends back a card, the HTTP response looks like:
 
 ```json
 {
@@ -153,7 +187,7 @@ Each card data is sent with these key-value pairs:
 }
 ```
 
-Lists of boards are in an array:
+Lists of cards are in an array:
 
 ```json
 [
