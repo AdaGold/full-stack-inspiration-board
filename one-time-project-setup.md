@@ -81,7 +81,7 @@ When other members can pull the migration files from git and run the migrations,
 
 Feel free to follow these steps in this order exactly. Feel free to ask questions and get help from your teammates when you need!
 
-# Clone
+## Clone
 
 Clone the forked repo. Do _not_ clone this inside of another project folder, because that will cause issues.
 
@@ -162,7 +162,7 @@ Commit and push your files to your repo, especially including the migration file
 
 # Coming Back Together
 
-Get all members aligned on the front-end. Get all members to...:
+Get all members aligned on the front-end. Get all members to...
 
 1. Clone the repo and pull changes
 1. Create an identical `.env` file on their local machine
@@ -184,11 +184,13 @@ The next step is to pursue feature development!
 Read through the project requirements, and make a strategy. We recommend:
 
 1. Some folks pair and begin front-end development.
-    - We recommend starting with displaying a list of Boards.
+    - We recommend starting with displaying:
+        - A list of Boards
+        - A form to create a new Board.
     - From the requirements, we can infer that each Board has a `title`, `owner` name, and `board_id` (as the hidden, implied primary key).
 
 1. Other folks pair and begin back-end development.
     - We recommend starting with making the conventional endpoints for
-        - getting a list of all boards
-        - creating a board
+        - Getting a list of all boards
+        - Creating a board
     - From the requirements, we can infer that the front-end layer is expecting responses with a `title`, `owner` name, and `board_id`.
