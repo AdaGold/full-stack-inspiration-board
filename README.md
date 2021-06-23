@@ -64,7 +64,7 @@ At submission time, no matter where your group is, submit the project via Learn.
 You and your group will submit the following materials:
 
 1. The team name
-1. The name of the team's Slack public channel
+1. The name of the team's public Slack channel
 1. A URL to the group front-end repo
 1. A URL to the group back-end repo
 1. A URL to the deployed front-end
@@ -76,10 +76,8 @@ The group will also give a final presentation. Presentation requirements are lis
 ## Getting Started
 
 1. As a group, create a team name (this is important for instructors)
-1. As a group, discuss a project theme and decide one
-    - Begin this discussion by sharing ideas of what inspires you
-    - Create a project name that will appear on the top of the web app
 1. Create a public Slack channel for the team. This is **required** in order to fulfill the required project development workflow.
+1. Create a shared note-taking document, for shared notes between the team.
 1. Schedule time to go through the directions in [the one-time project setup document](./one-time-project-setup.md).
 
 ## One-Time Project Setup
@@ -119,15 +117,18 @@ Following these steps in the project development workflow is **required**.
 
 ### Front-end Development Workflow
 
+1. Send your Slack check-in message
 1. Ensure that git is up-to-date
 1. Run the front-end server with `$ yarn start` from the project root
 1. In another terminal, run the back-end server with `$ FLASK_ENV=development flask run` from its project root
 1. Begin development work, using VSCode and browser Dev Tools
 1. Check your git status, making commits, pulling, and pushing as needed
     - Make a commit after each substantial change
+1. Update the shared notes and send your Slack check-out message
 
 ### Back-end Development Workflow
 
+1. Send your Slack check-in message
 1. Activate the virtual environment
 1. Ensure that git is up-to-date
 1. Run the back-end server with `$ FLASK_ENV=development flask run` from the project root
@@ -135,6 +136,7 @@ Following these steps in the project development workflow is **required**.
 1. Check your git status, making commits, pulling, and pushing as needed
     - Make a commit after each substantial change
 1. Deactivate the virtual environment
+1. Update the shared notes and send your Slack check-out message
 
 ## Project Requirements
 
