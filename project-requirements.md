@@ -45,42 +45,39 @@ Note: If your project changes the directory name `app` to something else, or ren
 
 ## Feature Requirements
 
+Aim to complete all of these features. You and your team should feel *empowered* to:
+
+- Interpret the features however you'd like
+- Prioritize which features come first
+
+We recommend prioritizing creating and reading Boards and Cards.
+
 ### Create & Read Boards
 
 **As a user, I want to be able to...**
 
 #### Create
 
-- Create a new board, by filling out a form and filling out the "title" and "owner" name.
-- See an error message if I try to make a new board with an empty/blank/invalid "title" or "owner" input.
+- Create a new board, by filling out a form. The form includes "title" and "owner" name of the board.
+- See an error message if I try to make a new board with an empty/blank/invalid/missing "title" or "owner" input.
     - All error messages can look like a new section on the screen, a red outline around the input field, and/or disabling the input, as long as it's visible
 - Hide the "New Board" form, so I don't have to see the "New Board" form all the time when I'm looking at cards.
 
 #### Read
 
 - View a list of all boards.
-- Hide the list of boards.
 - Select a board.
 
-<!-- #### Update
-
-- Edit the "title" and "owner" of an existing board, using a form.
-- See an error message if I try to edit a new board with an empty/blank/invalid "title" or "owner" input. -->
-
-<!-- #### Delete
-
-- Delete an existing board, which should delete all associated cards. -->
-
-### Create, Read, Delete, and +1 Cards
+### Create, Read, and Delete Cards
 
 **As a user, I want to be able to...**
 
 #### Create
 
-- Create a new card _for the selected board_, by filling out a form and filling out the "message."
+- Create a new card _for the selected board_, by filling out a form and filling out a "message."
 - See an error message if I try to make the card's "message" more than 40 characters.
     - All error messages can look like a new section on the screen, a red outline around the input field, and/or disabling the input, as long as it's visible
-- See an error message if I try to make a new card with an empty/blank/invalid "message."
+- See an error message if I try to make a new card with an empty/blank/invalid/missing "message."
 
 #### Read
 
