@@ -2,6 +2,8 @@
 
 As a team, decide on one stretch goal from each layer.
 
+Implementing the stretch goal is lower priority than implementing the project requirements.
+
 ## Front-end Stretch Goals
 
 - Use React Router
