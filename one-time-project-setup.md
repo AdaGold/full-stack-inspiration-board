@@ -4,13 +4,17 @@
 
 1. Pick one group member to [fork the front-end layer repo](), and add everyone as collaborators.
 1. Pick either the same or a different group member to [fork the back-end layer repo](), and add everyone as collaborators.
-1. Designate one pair to go through the front-end setup steps, and another person to go through the back-end setup steps. Splitting this work will allow groups to commit and push the initial setup, which will help everyone.
+1. Designate one pair to go through the front-end setup steps, and another pair to go through the back-end setup steps.
 
-## Front-End Layer Setup
+Splitting this work allows the pairs to commit and push the initial setup. Then, the rest of the group can pull down that work, which will help everyone!
+
+# Front-End Layer Setup
 
 <details>
 
 <summary>Click here to expand front-end layer setup steps.</summary>
+
+<br/>
 
 Feel free to follow these steps in this order exactly. Feel free to ask questions and get help from your teammates when you need!
 
@@ -61,13 +65,17 @@ Commit and push your files to your repo, especially including the `package.json`
 
 </details>
 
-## Back-End Layer Setup
+# Back-End Layer Setup
+
+Perform these steps on one machine right now.
 
 Getting one or two members to do the back-end layer setup first is helpful. This pair can create the models, which will create the migration files.
 
 When other members can pull the migration files from git and run the migrations, it's a lot smoother!
 
 <details>
+
+<br/>
 
 <summary>Click here to expand back-end layer setup steps.</summary>
 
@@ -95,7 +103,7 @@ Install dependencies (we've already gathered them all into a `requirements.txt` 
 
 ## Setting Up The Database
 
-Create a database named `inspiration_board_development`
+Create a database named `inspiration_board_development`.
 
 ## Creating a `.env` File
 
@@ -114,12 +122,26 @@ SQLALCHEMY_DATABASE_URI=postgresql+psycopg2://postgres:postgres@localhost:5432/i
 
 ## Create Models
 
-Consider the two models that this project may use, and the attributes they have. If desired, feel free to check our [provided project hints](./hints.md) (Check Hint #1). Then:
+Consider these two initial models with these attributes:
 
+`Board`, **table name: `board`**
+
+- `board_id`, int, primary key
+- `title`, string
+- `owner`, string
+
+`Card`, **table name: `card`**
+
+- `card_id`, int, primary key
+- `message`, string
+- `likes_count`, int
+
+Then follow these steps. Recall that we can update our models any time. These steps are to initialize our database:
+
+1. Run `flask db init` (Do this before making the model files.)
 1. Create the model files for them
-1. Update `app/__init__.py` to import them into `create_app`
-1. Run `flask db init`
-1. Run `flask db migrate -m "adds models"`, with an appropriate migration description
+1. Update `app/__init__.py` to import the two models into `create_app`
+1. Run `flask db migrate -m "adds Board and Card models"`
 1. Run `flask db upgrade`
 
 ## Run `$ flask run` or `$ FLASK_ENV=development flask run`
@@ -138,7 +160,7 @@ Commit and push your files to your repo, especially including the migration file
 
 </details>
 
-## Coming Back Together
+# Coming Back Together
 
 Get all members aligned on the front-end. Get all members to...:
 
@@ -149,11 +171,11 @@ Get all members aligned on the front-end. Get all members to...:
 Get all members aligned on the back-end. Get all members to...
 
 1. Clone the repo and pull changes
-1. Create the database, `inspiration_board_development`
+1. Create the `inspiration_board_development` database on their local machine
 1. Create an identical `.env` file on their local machine
 1. Create a virtual environment and activate it
 1. Install the dependencies from `requirements.txt`
-1. Run `flask db init`, `flask db migrate`, and `flask db upgrade`
+1. Run `flask db upgrade`
 
 ## Next Steps: Feature Development
 
@@ -161,6 +183,12 @@ The next step is to pursue feature development!
 
 Read through the project requirements, and make a strategy. We recommend:
 
-- Some folks pair and begin front-end development. We recommend starting with displaying a list of Boards. From the requirements, we can infer that each Board has a `title`, `owner` name, and `board_id` (as the hidden, implied primary key).
+1. Some folks pair and begin front-end development.
+    - We recommend starting with displaying a list of Boards.
+    - From the requirements, we can infer that each Board has a `title`, `owner` name, and `board_id` (as the hidden, implied primary key).
 
-- Other folks pair and begin back-end development. We recommend starting with creating the conventional endpoints for getting a list of all boards, and then for creating a board. From the requirements, we can infer that the front-end layer is expecting responses with a `title`, `owner` name, and `board_id` (as the hidden, implied primary key).
+1. Other folks pair and begin back-end development.
+    - We recommend starting with making the conventional endpoints for
+        - getting a list of all boards
+        - creating a board
+    - From the requirements, we can infer that the front-end layer is expecting responses with a `title`, `owner` name, and `board_id`.
