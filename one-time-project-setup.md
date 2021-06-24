@@ -2,21 +2,19 @@
 
 ## Logistics
 
-1. Pick one group member to [fork the front-end layer repo](), and add everyone as collaborators.
-1. Pick either the same or a different group member to [fork the back-end layer repo](), and add everyone as collaborators.
+1. Pick one group member to [fork the front-end layer repo](https://github.com/AdaGold/front-end-inspiration-board), and add everyone as collaborators.
+1. Pick either the same or a different group member to [fork the back-end layer repo](https://github.com/AdaGold/back-end-inspiration-board), and add everyone as collaborators.
 1. Designate one pair to go through the front-end setup steps, and another pair to go through the back-end setup steps.
 
 Splitting this work allows the pairs to commit and push the initial setup. Then, the rest of the group can pull down that work, which will help everyone!
 
 # Front-End Layer Setup
 
+Feel free to follow these steps on one machine in this order exactly. Feel free to ask questions and get help from your teammates when you need!
+
 <details>
 
 <summary>Click here to expand front-end layer setup steps.</summary>
-
-<br/>
-
-Feel free to follow these steps in this order exactly. Feel free to ask questions and get help from your teammates when you need!
 
 ## Clone
 
@@ -67,19 +65,13 @@ Commit and push your files to your repo, especially including the `package.json`
 
 # Back-End Layer Setup
 
-Perform these steps on one machine right now.
+Feel free to follow these steps on one machine in this order exactly. Feel free to ask questions and get help from your teammates when you need!
 
-Getting one or two members to do the back-end layer setup first is helpful. This pair can create the models, which will create the migration files.
-
-When other members can pull the migration files from git and run the migrations, it's a lot smoother!
+Getting one or two members to do the back-end layer setup first is helpful. This pair can create the models, which will create the migration files. When other members can pull the migration files from git and run the migrations, it's a lot smoother!
 
 <details>
 
-<br/>
-
 <summary>Click here to expand back-end layer setup steps.</summary>
-
-Feel free to follow these steps in this order exactly. Feel free to ask questions and get help from your teammates when you need!
 
 ## Clone
 
@@ -181,7 +173,7 @@ Get all members aligned on the back-end. Get all members to...
 
 The next step is to pursue feature development!
 
-Read through the project requirements, and make a strategy. We recommend:
+Read through [the project requirements](./project-requirements.md), and make a strategy. We recommend:
 
 1. Some folks pair and begin front-end development.
     - We recommend starting with displaying:
