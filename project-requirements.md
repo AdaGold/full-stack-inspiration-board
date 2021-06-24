@@ -41,8 +41,6 @@ Please avoid using additional packages if possible. (But please install any pack
 
 The back-end API must be deployed on Heroku.
 
-Note: If your project changes the directory name `app` to something else, or renames the function `create_app()` inside `src/__init__.py`, you may need to change the command from `web: gunicorn 'app:create_app()'`.
-
 ## Feature Requirements
 
 Aim to complete all of these features. You and your team should feel *empowered* to:
@@ -51,7 +49,7 @@ Aim to complete all of these features. You and your team should feel *empowered*
 - Style the web app however you'd like, as long as it's usable
 - Prioritize which features come first
 
-We recommend prioritizing creating and reading Boards and Cards.
+It's recommended to prioritize creating and reading Boards and Cards.
 
 ### Create & Read Boards
 
