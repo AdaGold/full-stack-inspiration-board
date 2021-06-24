@@ -173,16 +173,16 @@ Get all members aligned on the back-end. Get all members to...
 
 The next step is to pursue feature development!
 
-Read through [the project requirements](./project-requirements.md), and make a strategy. We recommend:
+Read through [the project requirements](./project-requirements.md), and make a strategy. This is the recommended strategy:
 
 1. Some folks pair and begin front-end development.
-    - We recommend starting with displaying:
+    - Start with displaying:
         - A list of Boards
-        - A form to create a new Board.
+        - A form to create a new Board
     - From the requirements, we can infer that each Board has a `title`, `owner` name, and `board_id` (as the hidden, implied primary key).
 
 1. Other folks pair and begin back-end development.
-    - We recommend starting with making the conventional endpoints for
+    - Start with making the conventional endpoints for:
         - Getting a list of all boards
         - Creating a board
     - From the requirements, we can infer that the front-end layer is expecting responses with a `title`, `owner` name, and `board_id`.
