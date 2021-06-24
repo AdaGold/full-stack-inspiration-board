@@ -131,7 +131,7 @@ Every time the front-end sends a request to the back-end, and the request needs 
 ```json
 {
     "message": ...,
-    "likes_count": 0,
+    "likes_count": ...,
     "board_id": ...
 }
 ```
