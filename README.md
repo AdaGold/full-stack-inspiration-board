@@ -77,7 +77,7 @@ The group will also give a final presentation. Presentation requirements are lis
 
 1. As a group, create a team name (this is important for instructors)
 1. Create a public Slack channel for the team. This is **required** in order to fulfill the required project development workflow.
-1. As a team, go around and share what you are hoping to get out of this project as an individual, and as a team. (Examples: practicing front-end, practicing back-end, practicing everything, practicing note-taking, etc.)
+1. Go around and share what you are hoping to get out of this project as an individual, and as a team. (Examples: practicing front-end, practicing back-end, practicing everything, practicing note-taking, etc.)
 1. Create a shared note-taking document, for shared notes between the team.
 1. Schedule time to go through the directions in [the one-time project setup document](./one-time-project-setup.md).
 
