@@ -25,7 +25,7 @@ Clone the forked repo. Do _not_ clone this inside of another project folder, bec
 Create a new React app within this project folder. **You must perform this within this front-end project folder**.
 
 ```bash
-$ npx create-react-app .
+$ yarn create react-app .
 ```
 
 ## Add `axios`
