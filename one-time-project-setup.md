@@ -158,7 +158,7 @@ Get all members aligned on the front-end. Get all members to...
 
 1. Clone the repo and pull changes
 1. Create an identical `.env` file on their local machine
-1. Install dependencies using `yarn install`
+1. Install dependencies using `yarn add`
 
 Get all members aligned on the back-end. Get all members to...
 
