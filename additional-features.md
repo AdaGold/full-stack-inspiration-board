@@ -1,10 +1,10 @@
-# Stretch Goals
+# Additional Features
 
-As a team, decide on one stretch goal from each layer.
+As a team, decide on one additional feature from each layer.
 
-Implementing the stretch goal is lower priority than implementing the project requirements.
+Implementing these additional features is of lower priority than implementing the project requirements.
 
-## Front-end Stretch Goals
+## Front-end Features
 
 - Use React Router
 - Allow the user to select how to sort the cards between these options:
@@ -12,7 +12,7 @@ Implementing the stretch goal is lower priority than implementing the project re
     - Sort alphabetically
     - Sort by number of "+1"s
 
-## Back-end Stretch Goals
+## Back-end Features
 
 - Write tests for the CRUD operations around the Board model
 - Every time a new card is made, it sends a message to the team's public Slack channel

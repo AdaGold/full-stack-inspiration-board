@@ -4,9 +4,9 @@ To complete this project,
 
 1. Implement as many of the Feature Requirements (details below) as possible
 1. Conform to the Front-end Layer Requirements and Back-end Layer Requirements (details below)
-1. Include two [stretch goals](./stretch-goals.md):
-    - One front-end layer stretch goal
-    - One back-end layer stretch goal
+1. Include two [additional features](./additional-features.md):
+    - One front-end layer feature
+    - One back-end layer feature
 
 ## Front-end Layer Requirements
 
