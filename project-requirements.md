@@ -20,7 +20,7 @@ Please avoid using additional packages if possible. (But please install any pack
 
 ### Deployment
 
-The front-end layer must be deployed on Heroku. This requires independent research starting with the search query "react heroku deploy."
+The front-end layer must be deployed on Render. This requires independent research starting with the search query "react render deploy."
 
 ## Back-end Layer Requirements
 
@@ -39,7 +39,7 @@ Please avoid using additional packages if possible. (But please install any pack
 
 ### Deployment
 
-The back-end API must be deployed on Heroku.
+The back-end API must be deployed on Render.
 
 ## Feature Requirements
 

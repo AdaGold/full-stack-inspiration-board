@@ -44,7 +44,7 @@ We will use this project as a chance to see how the front-end layer and back-end
 
 ### Demo
 
-[An example implementation of the project is deployed on Heroku](https://ada-inspo-board.herokuapp.com/). This demonstrates only one way that a project could look.
+[An example implementation of the project is deployed on Render](https://ada-inspiration-board.onrender.com/). This demonstrates only one way that a project could look.
 
 (This app may take a long time to load, so you may need to refresh it periodically.)
 
