@@ -55,7 +55,7 @@ axios.get(`${process.env.REACT_APP_BACKEND_URL}/boards`, {
     // ...
 ```
 
-This will make Heroku deployment easier.
+This will make Render deployment easier.
 
 ## Commit and Push
 
