@@ -2,8 +2,8 @@
 
 ## Logistics
 
-1. Pick one group member to [fork the front-end layer repo](https://github.com/AdaGold/front-end-inspiration-board), and add everyone as collaborators.
-1. Pick either the same or a different group member to [fork the back-end layer repo](https://github.com/AdaGold/back-end-inspiration-board), and add everyone as collaborators.
+1. Pick one group member to [fork the front-end layer repo](https://github.com/AdaC19/front-end-inspiration-board), and add everyone as collaborators.
+1. Pick either the same or a different group member to [fork the back-end layer repo](https://github.com/AdaC19/back-end-inspiration-board), and add everyone as collaborators.
 1. Designate one pair to go through the front-end setup steps, and another pair to go through the back-end setup steps.
 
 Splitting this work allows the pairs to commit and push the initial setup. Then, the rest of the group can pull down that work, which will help everyone!
@@ -25,7 +25,7 @@ Clone the forked repo. Do _not_ clone this inside of another project folder, bec
 Create a new React app within this project folder. **You must perform this within this front-end project folder**.
 
 ```bash
-$ npx create-react-app .
+$ yarn create react-app .
 ```
 
 ## Add `axios`
