@@ -6,7 +6,6 @@ Implementing these additional features is of lower priority than implementing th
 
 ## Front-end Features
 
-- Use React Router
 - Allow the user to select how to sort the cards between these options:
     - Sort by ID
     - Sort alphabetically
