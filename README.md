@@ -120,7 +120,7 @@ Following these steps in the project development workflow is **required**.
 
 1. Send your Slack check-in message
 1. Ensure that git is up-to-date
-1. Run the front-end server with `$ yarn start` from the project root
+1. Run the front-end server with `$ npm run dev` from the project root
 1. In another terminal, run the back-end server with `$ FLASK_ENV=development flask run` from its project root
 1. Begin development work, using VSCode and browser Dev Tools
 1. Check your git status, making commits, pulling, and pushing as needed

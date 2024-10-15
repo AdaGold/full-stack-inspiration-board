@@ -25,7 +25,7 @@ Clone the forked repo. Do _not_ clone this inside of another project folder, bec
 Create a new React app within this project folder. **You must perform this within this front-end project folder**.
 
 ```bash
-$ yarn create react-app .
+$ npm create vite@latest . -- --template react
 ```
 
 ## Add `axios`
@@ -33,7 +33,7 @@ $ yarn create react-app .
 Install axios:
 
 ```bash
-$ yarn add axios
+$ npm install axios@latest
 ```
 
 ## Creating a `.env` File
@@ -43,15 +43,15 @@ Create a file named `.env`.
 The front-end layer needs to send API requests to the back-end layer. In order to handle this, the front-end layer repo **must** include a `.env` file with this line:
 
 ```
-REACT_APP_BACKEND_URL=http://localhost:5000
+VITE_APP_BACKEND_URL=http://localhost:5000
 ```
 
-Note that this `REACT_APP_BACKEND_URL` _must_ include `http://`.
+Note that this `VITE_APP_BACKEND_URL` _must_ include `http://`.
 
-Use this environment variable to send your API requests. You can read it by using the expression `process.env.REACT_APP_BACKEND_URL`. For example, we may use it like this in any component:
+Use this environment variable to send your API requests. You can read it by using the expression `import.meta.env.VITE_APP_BACKEND_URL`. For example, we may use it like this in any component:
 
 ```js
-axios.get(`${process.env.REACT_APP_BACKEND_URL}/boards`, {
+axios.get(`${import.meta.env.VITE_APP_BACKEND_URL}/boards`, {
     // ...
 ```
 
@@ -158,7 +158,7 @@ Get all members aligned on the front-end. Get all members to...
 
 1. Clone the repo and pull changes
 1. Create an identical `.env` file on their local machine
-1. Install dependencies using `yarn add`
+1. Install dependencies using `npm install`
 
 Get all members aligned on the back-end. Get all members to...
 

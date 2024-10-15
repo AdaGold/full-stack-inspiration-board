@@ -13,7 +13,7 @@ To complete this project,
 Your front-end layer must use:
 
 - React
-- create-react-app
+- vite
 - axios
 
 Please avoid using additional packages if possible. (But please install any packages needed for your project to run!)
