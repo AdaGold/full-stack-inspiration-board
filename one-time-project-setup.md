@@ -131,13 +131,11 @@ Then follow these steps. Recall that we can update our models any time. These st
 1. Run `flask db migrate -m "adds Board and Card models"`
 1. Run `flask db upgrade`
 
-## Run `$ flask run` or `$ FLASK_ENV=development flask run`
+## Run `$ flask run` or `$ flask run --debug`
 
 Check that your Flask server can run with `$ flask run`.
 
-The environment variable in the `.env` file, `FLASK_ENV`, will automatically enable development mode. This enables hot-reloading, which is a feature that refreshes the Flask server every time there is a detected change.
-
-Alternatively, if our environment variable `FLASK_ENV` is not enabling development mode, we can manually set it with `$ FLASK_ENV=development flask run`.
+The command `$ flask run --debug` will automatically enable development mode. The `--debug` flag enables hot-reloading, which is a feature that refreshes the Flask server every time there is a detected change.
 
 **It is highly recommended to run the Flask servers in development mode**.
 

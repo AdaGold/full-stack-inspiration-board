@@ -132,7 +132,7 @@ Following these steps in the project development workflow is **required**.
 1. Send your Slack check-in message
 1. Activate the virtual environment
 1. Ensure that git is up-to-date
-1. Run the back-end server with `$ FLASK_ENV=development flask run` from the project root
+1. Run the back-end server with `$ flask run --debug` from the project root
 1. Begin development work, using VSCode and Postman
 1. Check your git status, making commits, pulling, and pushing as needed
     - Make a commit after each substantial change
