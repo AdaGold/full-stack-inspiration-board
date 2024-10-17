@@ -13,8 +13,8 @@ To complete this project,
 Your front-end layer must use:
 
 - React
-- vite
-- axios
+- Vite
+- Axios
 
 Please avoid using additional packages if possible. (But please install any packages needed for your project to run!)
 

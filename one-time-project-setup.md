@@ -99,16 +99,11 @@ Create a database named `inspiration_board_development`.
 
 ## Creating a `.env` File
 
-Create a file named `.env`.
-
-Add this environment variable: `FLASK_ENV=development`
-
-Also, add the environment variable `SQLALCHEMY_DATABASE_URI` to hold the path to your development database.
+Add the environment variable `SQLALCHEMY_DATABASE_URI` to hold the path to your development database.
 
 Your `.env` may look like this:
 
 ```
-FLASK_ENV=development
 SQLALCHEMY_DATABASE_URI=postgresql+psycopg2://postgres:postgres@localhost:5432/inspiration_board_development
 ```
 
