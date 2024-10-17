@@ -2,8 +2,8 @@
 
 ## Logistics
 
-1. Pick one group member to [fork the front-end layer repo](https://github.com/Ada-C19/front-end-inspiration-board), and add everyone as collaborators.
-1. Pick either the same or a different group member to [fork the back-end layer repo](https://github.com/Ada-C19/back-end-inspiration-board), and add everyone as collaborators.
+1. Pick one group member to [fork the front-end layer repo](https://github.com/Ada-C22/front-end-inspiration-board), and add everyone as collaborators.
+1. Pick either the same or a different group member to [fork the back-end layer repo](https://github.com/Ada-C22/back-end-inspiration-board), and add everyone as collaborators.
 1. Designate one pair to go through the front-end setup steps, and another pair to go through the back-end setup steps.
 
 Splitting this work allows the pairs to commit and push the initial setup. Then, the rest of the group can pull down that work, which will help everyone!
@@ -25,7 +25,7 @@ Clone the forked repo. Do _not_ clone this inside of another project folder, bec
 Create a new React app within this project folder. **You must perform this within this front-end project folder**.
 
 ```bash
-$ yarn create react-app .
+$ npm create vite@latest . -- --template react
 ```
 
 ## Add `axios`
@@ -33,7 +33,7 @@ $ yarn create react-app .
 Install axios:
 
 ```bash
-$ yarn add axios
+$ npm install axios@latest
 ```
 
 ## Creating a `.env` File
@@ -43,15 +43,17 @@ Create a file named `.env`.
 The front-end layer needs to send API requests to the back-end layer. In order to handle this, the front-end layer repo **must** include a `.env` file with this line:
 
 ```
-REACT_APP_BACKEND_URL=http://localhost:5000
+VITE_APP_BACKEND_URL=http://localhost:5000
 ```
 
-Note that this `REACT_APP_BACKEND_URL` _must_ include `http://`.
+Note that this `VITE_APP_BACKEND_URL` _must_ include `http://`.
 
-Use this environment variable to send your API requests. You can read it by using the expression `process.env.REACT_APP_BACKEND_URL`. For example, we may use it like this in any component:
+Use this environment variable to send your API requests. You can read it by using the expression `import.meta.env.VITE_APP_BACKEND_URL`. For example, we may use it like this in any component:
 
 ```js
-axios.get(`${process.env.REACT_APP_BACKEND_URL}/boards`, {
+const VITE_APP_BACKEND_URL = import.meta.env.VITE_APP_BACKEND_URL
+
+axios.get(`${VITE_APP_BACKEND_URL}/boards`, {
     // ...
 ```
 
@@ -99,16 +101,11 @@ Create a database named `inspiration_board_development`.
 
 ## Creating a `.env` File
 
-Create a file named `.env`.
-
-Add this environment variable: `FLASK_ENV=development`
-
-Also, add the environment variable `SQLALCHEMY_DATABASE_URI` to hold the path to your development database.
+Add the environment variable `SQLALCHEMY_DATABASE_URI` to hold the path to your development database.
 
 Your `.env` may look like this:
 
 ```
-FLASK_ENV=development
 SQLALCHEMY_DATABASE_URI=postgresql+psycopg2://postgres:postgres@localhost:5432/inspiration_board_development
 ```
 
@@ -136,13 +133,11 @@ Then follow these steps. Recall that we can update our models any time. These st
 1. Run `flask db migrate -m "adds Board and Card models"`
 1. Run `flask db upgrade`
 
-## Run `$ flask run` or `$ FLASK_ENV=development flask run`
+## Run `$ flask run` or `$ flask run --debug`
 
 Check that your Flask server can run with `$ flask run`.
 
-The environment variable in the `.env` file, `FLASK_ENV`, will automatically enable development mode. This enables hot-reloading, which is a feature that refreshes the Flask server every time there is a detected change.
-
-Alternatively, if our environment variable `FLASK_ENV` is not enabling development mode, we can manually set it with `$ FLASK_ENV=development flask run`.
+The command `$ flask run --debug` will automatically enable development mode. The `--debug` flag enables hot-reloading, which is a feature that refreshes the Flask server every time there is a detected change.
 
 **It is highly recommended to run the Flask servers in development mode**.
 
@@ -158,7 +153,7 @@ Get all members aligned on the front-end. Get all members to...
 
 1. Clone the repo and pull changes
 1. Create an identical `.env` file on their local machine
-1. Install dependencies using `yarn add`
+1. Install dependencies using `npm install`
 
 Get all members aligned on the back-end. Get all members to...
 
