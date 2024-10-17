@@ -2,8 +2,8 @@
 
 ## Logistics
 
-1. Pick one group member to [fork the front-end layer repo](https://github.com/Ada-C19/front-end-inspiration-board), and add everyone as collaborators.
-1. Pick either the same or a different group member to [fork the back-end layer repo](https://github.com/Ada-C19/back-end-inspiration-board), and add everyone as collaborators.
+1. Pick one group member to [fork the front-end layer repo](https://github.com/Ada-C22/front-end-inspiration-board), and add everyone as collaborators.
+1. Pick either the same or a different group member to [fork the back-end layer repo](https://github.com/Ada-C22/back-end-inspiration-board), and add everyone as collaborators.
 1. Designate one pair to go through the front-end setup steps, and another pair to go through the back-end setup steps.
 
 Splitting this work allows the pairs to commit and push the initial setup. Then, the rest of the group can pull down that work, which will help everyone!
@@ -51,7 +51,9 @@ Note that this `VITE_APP_BACKEND_URL` _must_ include `http://`.
 Use this environment variable to send your API requests. You can read it by using the expression `import.meta.env.VITE_APP_BACKEND_URL`. For example, we may use it like this in any component:
 
 ```js
-axios.get(`${import.meta.env.VITE_APP_BACKEND_URL}/boards`, {
+const VITE_APP_BACKEND_URL = import.meta.env.VITE_APP_BACKEND_URL
+
+axios.get(`${VITE_APP_BACKEND_URL}/boards`, {
     // ...
 ```
 
