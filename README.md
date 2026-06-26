@@ -23,6 +23,12 @@ Working with the React JS library:
 - Initializing and using state within a component
 - Passing callback functions to child components and use them to update state
 
+Working with Cloud Infrastructure:
+
+- Designing system architecture with a cloud-first approach
+- Identifying and justifying an appropriate compute modality for a workload
+- Utilizing object storage for hosting images
+
 ## Goal
 
 Once upon a time, there existed an Ada Developers Academy office with an inspiration board...
@@ -40,11 +46,11 @@ Then, a user can select a single board. When a user selects a board, they can se
 
 Users can even "+1" the cards that they agree with!
 
-We will use this project as a chance to see how the front-end layer and back-end layer interact. This is also an opportunity to bring some creativity to the UI.
+We will use this project as a chance to see how the front-end layer and back-end layer interact, as well as get more hands-on practice with cloud services. This is also an opportunity to bring some creativity to the UI.
 
 ### Demo
 
-[An example implementation of the project is deployed on Render](https://ada-inspiration-board.onrender.com/). This demonstrates only one way that a project could look.
+[This is an example of the project that has been deployed](https://ada-inspiration-board.onrender.com/). This demonstrates only one way that a project could look.
 
 (This app may take a long time to load, so you may need to refresh it periodically.)
 
@@ -76,7 +82,8 @@ The group will also give a final presentation. Presentation requirements are lis
 ## Getting Started
 
 1. As a group, create a team name (this is important for instructors)
-1. Create a public Slack channel for the team. This is **required** in order to fulfill the required project development workflow.
+1. Review and fill out the [coworking agreement](./coworking_agreement.md).
+1. Create a __public__ Slack channel for the team. This is **required** in order to fulfill the required project development workflow.
 1. Go around and share what you are hoping to get out of this project as an individual, and as a team. (Examples: practicing front-end, practicing back-end, practicing everything, practicing note-taking, etc.)
 1. Create a shared note-taking document, for shared notes between the team.
 1. Schedule time to go through the directions in [the one-time project setup document](./one-time-project-setup.md).
@@ -149,9 +156,9 @@ Should you and/or your group ever want hints, we've included some [in this hints
 
 ## Presentation Requirements
 
-Groups should prepare a ten-minute presentation.
+Each group will prepare a presentation.
 
-- No more than 10 minutes (Presentations over 10 minutes will be gently cut off)
+- No more than 10 minutes (presentations over 10 minutes will be gently cut off)
 - Slides are required (even if it is one slide)
 - All members must speak at least once
 - Includes a demo of the project
@@ -159,7 +166,15 @@ Groups should prepare a ten-minute presentation.
 - Video and audio are allowed, but must fit within the time limit
 - Props and costumes are allowed
 
-The conclusion of this presentation should include the following topics. Feel free to answer as a team:
+From the list below, __select 5 questions to discuss__. Feel free to answer as a team:
 
-- What are your two most important takeaways from this project?
+- Which compute service did your group choose? Explain your decision and any tradeoffs/benefits there are for this choice.
+- How did you incorporate image uploads into your project?
+- Did your tech stack or networking choices change between the design phase and the final implementation? If so, how did it change and why were changes made?
+- How could EDA be integrated into your project?
+- Explain your deployment plan and the steps your pipeline performs.
+- If time allowed, what AI offerings would have been useful to integrate and how would you have done so?
+- Did you implement any monitoring and alerts for your application? If so, what did you monitor and why? If not, what would you monitor and why?
+- Discuss the tagging strategy your team came up with.
+- What are is an important takeaways from this project?
 - What is advice you would give to your past self about this project?

@@ -20,7 +20,7 @@ Please avoid using additional packages if possible. (But please install any pack
 
 ### Deployment
 
-The front-end layer must be deployed on Render. This requires independent research starting with the search query "react render deploy."
+The front-end layer must be deployed. This may require independent research.
 
 ## Back-end Layer Requirements
 
@@ -33,13 +33,13 @@ Your back-end layer must use:
 - python-dotenv
 - gunicorn
 - pytest
-- flask_cors
+- flask-cors
 
 Please avoid using additional packages if possible. (But please install any packages needed for your project to run!)
 
 ### Deployment
 
-The back-end API must be deployed on Render.
+The back-end API must be deployed. This may require independent research.
 
 ## Feature Requirements
 
@@ -92,3 +92,13 @@ It's recommended to prioritize creating and reading Boards and Cards.
 
 - Press a "+1" icon on a single card, to indicate that I agree with it.
 - See the number of "+1"s on a single card. Every card starts with zero "+1"s.
+
+### Image Upload Feature
+
+As a group, come up with a feature somewhere in your project that involves uploading an image using object storage. 
+
+Some ideas are:
+- A user can upload an image and that image will appear as the background of a card
+- A user can upload an image and that image will appear as the background of a board 
+
+Use your creativity to come up with any other feature that involved image uploads and object storage.
