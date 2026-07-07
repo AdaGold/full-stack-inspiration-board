@@ -17,6 +17,11 @@ Talk through each section with your partner. Add notes on what you discussed and
 ## One Team Communication Skill to Improve
 *What is a teamwork-related skill you want to work on?*
 
+## Cloud Resource Planning
+*Will you share cloud resources? If you do plan on sharing cloud resources, how will you do so? List out your agreed upon expectations.*
+
+*Consider appointing a team member to routinely monitor your cloud services costs to prevent any surprise charges.*
+
 ## Optional: Other agreements
 *Other co-working agreements that were not captured in the above sections.*
 
