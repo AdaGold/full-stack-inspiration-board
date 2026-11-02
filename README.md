@@ -165,16 +165,4 @@ Each group will prepare a presentation.
     - If the project is deployed, prefer to use the deployed version
 - Video and audio are allowed, but must fit within the time limit
 - Props and costumes are allowed
-
-From the list below, __select 5 questions to discuss__. Feel free to answer as a team:
-
-- Which compute service did your group choose? Explain your decision and any tradeoffs/benefits there are for this choice.
-- How did you incorporate image uploads into your project?
-- Did your tech stack or networking choices change between the design phase and the final implementation? If so, how did it change and why were changes made?
-- How could EDA be integrated into your project?
-- Explain your deployment plan and the steps your pipeline performs.
-- If time allowed, what AI offerings would have been useful to integrate and how would you have done so?
-- Did you implement any monitoring and alerts for your application? If so, what did you monitor and why? If not, what would you monitor and why?
-- Discuss the tagging strategy your team came up with.
-- What are is an important takeaways from this project?
-- What is advice you would give to your past self about this project?
+- Consult the Inspiration Board Project Intro slides for a list of required and optional questions to answer during your presentation. 
